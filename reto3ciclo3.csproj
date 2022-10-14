@@ -1,0 +1,77 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{869E6D6D-4E73-4C2D-A51B-32719F6BD4E4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>reto3ciclo3</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="template_sprint_3_nc\.gitignore" />
+    <Content Include="template_sprint_3_nc\app\auth.py" />
+    <Content Include="template_sprint_3_nc\app\db.py" />
+    <Content Include="template_sprint_3_nc\app\dbc.py" />
+    <Content Include="template_sprint_3_nc\app\inbox.py" />
+    <Content Include="template_sprint_3_nc\app\schema.sql" />
+    <Content Include="template_sprint_3_nc\app\static\style.css" />
+    <Content Include="template_sprint_3_nc\app\templates\auth\change.html" />
+    <Content Include="template_sprint_3_nc\app\templates\auth\forgot.html" />
+    <Content Include="template_sprint_3_nc\app\templates\auth\login.html" />
+    <Content Include="template_sprint_3_nc\app\templates\auth\register.html" />
+    <Content Include="template_sprint_3_nc\app\templates\base.html" />
+    <Content Include="template_sprint_3_nc\app\templates\inbox\send.html" />
+    <Content Include="template_sprint_3_nc\app\templates\inbox\show.html" />
+    <Content Include="template_sprint_3_nc\app\utils.py" />
+    <Content Include="template_sprint_3_nc\app\__init__.py" />
+    <Content Include="template_sprint_3_nc\requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="template_sprint_3_nc\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\reto3ciclo3\v17\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
